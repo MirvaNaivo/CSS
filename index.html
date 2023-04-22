@@ -6,27 +6,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
-    <nav>
+    <nav class="navbar">
+        <div class="logo"><img src="./images/planets.jpg" alt="logo"></div>
         <ul>
-            <li><img src="./images/planets.jpg" alt="logo"></li>
             <li><a href="">Links</a></li>
             <li><a href="">References</a></li>
             <li><a href="">About</a></li>
         </ul>
     </nav>
-        
-    <header>
-            <img src="./images/programmer.jpg" alt="programmer-in-progress">
-            <h2>This is is a website for all programmers in progress!</h2>
-            <p>Join the community to learn new things, share tips and tricks and enjoy conversations with like-minded people.</p>
+
+    <header class="headercontent">
+        <div>
+            <h2>This is a website for all programmers in progress!</h2>
+            <p>Join the community to learn new things, share tips and tricks and enjoy conversations with like-minded
+                people.</p>
             <p>It doesn't matter which planet you're from, everyone is welcome!</p>
             <a href="">Join now</a>
+        </div>
+        <div>
+            <img src="./images/programmer.jpg" alt="programmer-in-progress">
+        </div>
     </header>
-
+    
     <section>
-        <article>
+        <div class="info">
             <figure>
                 <a href=""><img src="./images/info.jpg"></a>
                 <figcaption>Info</figcaption>
@@ -42,19 +47,16 @@
             <figure>
                 <a href=""><img src="./images/join.jpg"></a>
                 <figcaption>Join</figcaption>
-            </figure>    
-        </article>
-
-    
-        <div class="section">
-            <p>"This community has helped me a lot in getting started with my programming career!"</p>
-            <p>Lisa, 30</p>
+            </figure>
         </div>
+
+        <blockquote class="quote">
+            <p>"This community has helped me a lot in getting started with my programming career!" Lisa, 30</p>
+        </blockquote>
     </section>
 
     <footer>
         <p>Copyright ©</p>
     </footer>
-    
 </body>
 </html>

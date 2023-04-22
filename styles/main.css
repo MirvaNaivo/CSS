@@ -12,47 +12,42 @@ body {
     margin: 0;
 }
 
-nav {
+.navbar {
     background-color: rgb(13, 13, 13);
-    width: 100%;
-    margin: 0;
-    padding-left: 300px;
-    padding-right: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding-top: 30px;
-    padding-left: 0;
-    overflow: hidden;
-    background-color: rgb(13, 13, 13);
-  }
-
-li img {
-    float: left;
-    width: 150px;
-}
-
-li a {
-    color: white;
-    padding-right: 30px;
     text-decoration: none;
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+    padding: 0;
+    margin: 0;
 }
 
-@media screen and (max-width: 600px) {
-   nav {float: none;}
-  }
+li {
+    display: flex;
+    padding-left: 10px;
+}
 
-header {
+.headercontent {
     color: white;
     background-color: rgb(13, 13, 13);
-    padding: 100px 200px 400px 300px;
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-header a:link, header a:visited {
+header a:link,
+header a:visited {
     background-color: rgb(13, 40, 180);
     color: white;
     padding: 14px 25px;
@@ -60,46 +55,31 @@ header a:link, header a:visited {
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
+    align-items: center;
 }
 
-header a:hover, header a:active {
+header a:hover,
+header a:active {
     background-color: rgb(16, 51, 229);
-  }
-
-header img {
-    float: right;
-    width: 500px;
 }
 
-
-article {
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 200px;
-    margin-left: 22.5%;
-    margin-right: 22.5%;
-    margin-bottom: 50px;
-}
-
-article figure {
-    margin-right: 10px;
+.info {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    float: left;
 }
 
-article figure img {
+figure img {
     border-radius: 8px;
     width: 144px;
     height: 144px;
 }
 
-div.section {
+.quote {
     background-color: rgb(122, 125, 129);
-    text-align: center;
     padding: 80px;
-    margin-left: 22.5%;
-    margin-right: 22.5%;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -107,12 +87,4 @@ footer {
     padding: 10px;
     text-align: center;
     color: white;
-  }
-
-  @media screen and (max-width: 800px) {
-    header, header img{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
-
-
+}
