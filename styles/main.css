@@ -29,7 +29,6 @@ ul {
     background-color: rgb(13, 13, 13);
   }
 
-  
 li img {
     float: left;
     width: 150px;
@@ -42,10 +41,15 @@ li a {
     float: right;
 }
 
+@media screen and (max-width: 600px) {
+   nav {float: none;}
+  }
+
 header {
     color: white;
     background-color: rgb(13, 13, 13);
-    padding: 100px 200px 400px 200px;
+    padding: 100px 200px 400px 300px;
+    width: 100%;
 }
 
 header a:link, header a:visited {
@@ -62,11 +66,6 @@ header a:hover, header a:active {
     background-color: rgb(16, 51, 229);
   }
 
-div.header {
-    float: left;
-    width: 50%;
-}
-
 header img {
     float: right;
     width: 500px;
@@ -82,13 +81,13 @@ article {
     margin-bottom: 50px;
 }
 
-figure {
+article figure {
     margin-right: 10px;
     text-align: center;
     float: left;
 }
 
-figure img {
+article figure img {
     border-radius: 8px;
     width: 144px;
     height: 144px;
@@ -110,9 +109,10 @@ footer {
     color: white;
   }
 
-  @media (max-width: 600px) {
-    article, div.section {
-      width: 100%;
-      height: auto;
+  @media screen and (max-width: 800px) {
+    header, header img{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
+
+
