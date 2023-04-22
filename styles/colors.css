@@ -1,0 +1,23 @@
+div {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 5px double crimson;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color: #ffa500;
+}
+
+h3 {
+    color: hsl(0, 100%, 50%);
+}
+
+h4 {
+    color: darkred;
+}
